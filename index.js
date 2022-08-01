@@ -44,6 +44,10 @@ app.use('/api/events/', require('./routes/events'))
 app.use( express.static('public') );
 
 // Escuchar peticiones (3)
-app.listen( 4000, () => {
-    console.log(`Servidor corriendo en puerto ${ 4000 }`)
-} )
+// app.listen( 4000, () => {
+//     console.log(`Servidor corriendo en puerto ${ 4000 }`)
+// } )
+
+app.listen( process.env.PORT, () => {
+    console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
+});
