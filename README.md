@@ -9,6 +9,12 @@
 - Se instala moment para manejar fechas/horas ** npm i moment **
 - Se instala para manejar Token's  ** npm i jsonwebtoken **
 
+# Para loguearse en heroku (desde la consola y primera configuracion) 
+
+- heroku -- version (para saver si ya tenemos heroku y si no instalamos herroku cli que esta en la pagina de heroku)
+- heroku login (despliega una web, damos log in y cerramos la web en consola ya estaremos logueados)
+- heroku git:remote -a calendar-new2022 (esto esta en la pagina al crear una nueva app e comandos VIDEO 398)
+- git push heroku master
 
 # Para ver en consola despues de haber subido a heroku
 
