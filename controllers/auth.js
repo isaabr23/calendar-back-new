@@ -143,17 +143,10 @@ const revalidarToken = async(req, res = response) => {
         res.json({
             ok: true,
             msg: 'nuevo token creado',
+            uid,
+            name,
             token
-        })
-    
-    res.json({
-        ok: true,
-        msg: 'tokenRevalidado',
-        // uid: uid,
-        // name: name
-        uid,
-        name
-    })
+        });
 }
 
 // Exportamos todas las constantes creadas

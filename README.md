@@ -16,7 +16,7 @@
 - heroku git:remote -a calendar-new2022 (esto esta en la pagina al crear una nueva app e comandos VIDEO 398)
 - git push heroku master
 
-# Para ver en consola despues de haber subido a heroku
+# Para ver en consola despues de haber subido a heroku y poder ver los console.logs que estan en el back
 
 - heroku logs -n 1000 --tail
 
