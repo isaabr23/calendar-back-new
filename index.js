@@ -42,9 +42,9 @@ app.use('/api/events/', require('./routes/events'))
 // Para que al actualizar la pagina de heroku no se pierda la app por que no se encuentra la ruta
 // ULTIMO PASO DEL CURSO 
 /* Si no encuentra alguna ruta tomara esta por default y evitar el " cannot GET xxx/xxx/ " */
-app.get('*', (req, res) => {
-    res.sendFile( __dirname + '/public/index.html' );
-})
+// app.get('*', (req, res) => {
+//     res.sendFile( __dirname + '/public/index.html' );
+// })
 
 // Directorio publico (5)
 // direccionamos a la carpeta public y se muestra en el navegador nuestra pagina (front end)
