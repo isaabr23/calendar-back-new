@@ -16,8 +16,9 @@ const Evento = require('../models/Evento');
 
 const getEventos = async(req, res = response) => {
 
-    /* Encuentra todos los eventos que hay en Evento (DB), populate nos trae la informacion del usuario y lo coloca en el arbol 
-        y colocando un segundo argumento ponemos los campos que queremos en este caso solo sera "name" 
+    /* 
+        Encuentra todos los eventos que hay en Evento (DB), *populate* nos trae la informacion del usuario y lo coloca en el arbol
+        y colocando un segundo argumento ponemos los campos que queremos en este caso solo sera "name"
         si quisieramos mas especificos seria "name password"
     */
     const eventos = await Evento.find()

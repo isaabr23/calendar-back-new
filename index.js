@@ -40,7 +40,8 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events/', require('./routes/events'))
 
 // Para que al actualizar la pagina de heroku no se pierda la app por que no se encuentra la ruta
-// ULTIMO PASO DEL CURSO 
+// ULTIMO PASO DEL CURSO pero a mi me funciona cambiando <BrowserRouter> por <HashRouter> en Calenda.jsx en el front
+// VIDEO 428
 /* Si no encuentra alguna ruta tomara esta por default y evitar el " cannot GET xxx/xxx/ " */
 // app.get('*', (req, res) => {
 //     res.sendFile( __dirname + '/public/index.html' );
